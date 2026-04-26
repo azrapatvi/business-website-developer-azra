@@ -72,8 +72,10 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,4vw,46px);font-we
 .project-desc{font-size:12.5px;color:var(--muted);line-height:1.6;flex:1;margin-bottom:14px}
 .feat-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
 .feat-tag{font-size:10px;font-weight:500;color:var(--ink2);background:var(--surface);border:1px solid var(--line);padding:3px 9px;border-radius:5px}
-.project-url{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:500;color:var(--accent);text-decoration:none;transition:gap 0.2s}
-.project-url:hover{gap:9px}
+
+/* Updated visit button — no raw URL shown */
+.project-visit-btn{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;font-size:12px;font-weight:500;padding:8px 14px;border-radius:7px;text-decoration:none;transition:all 0.2s;width:fit-content;margin-top:auto}
+.project-visit-btn:hover{background:var(--accent2);transform:translateY(-1px);box-shadow:0 4px 14px rgba(99,102,241,0.3)}
 
 .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:36px}
 .service-card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:28px;transition:all 0.22s}
@@ -176,7 +178,9 @@ footer p{font-size:13px;color:var(--muted)}
     <p class="section-sub">Every project below is live and running for an actual business today.</p>
   </div>
   <div class="projects-grid">
-    <a href="https://www.warmerbakesncakes.com" target="_blank" class="project-card reveal">
+
+    <!-- Project 1 -->
+    <div class="project-card reveal">
       <div class="project-thumb" style="background:linear-gradient(135deg,#FFF7ED,#FED7AA)">🎂<span class="thumb-label">Mumbai</span></div>
       <div class="project-body">
         <div class="live-pill"><span class="live-dot"></span> Live now</div>
@@ -184,10 +188,15 @@ footer p{font-size:13px;color:var(--muted)}
         <div class="project-name">Warmer Bakes & Cakes</div>
         <p class="project-desc">Online bakery with menu, pricing, WhatsApp cart ordering, photo gallery and a complete admin panel.</p>
         <div class="feat-tags"><span class="feat-tag">Online Menu</span><span class="feat-tag">WhatsApp Orders</span><span class="feat-tag">Admin Panel</span><span class="feat-tag">Gallery</span></div>
-        <span class="project-url">warmerbakesncakes.com <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <a href="https://www.warmerbakesncakes.com" target="_blank" class="project-visit-btn">
+          Visit Website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-    </a>
-    <a href="https://suhelshah.pythonanywhere.com" target="_blank" class="project-card reveal">
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card reveal">
       <div class="project-thumb" style="background:linear-gradient(135deg,#EFF6FF,#BFDBFE)">❄️<span class="thumb-label">Service</span></div>
       <div class="project-body">
         <div class="live-pill"><span class="live-dot"></span> Live now</div>
@@ -195,10 +204,15 @@ footer p{font-size:13px;color:var(--muted)}
         <div class="project-name">CoolAir Pro</div>
         <p class="project-desc">Service booking with customer login, online booking, tracking and a full admin dashboard with live stats.</p>
         <div class="feat-tags"><span class="feat-tag">Booking System</span><span class="feat-tag">Customer Login</span><span class="feat-tag">Admin Dashboard</span><span class="feat-tag">Tracking</span></div>
-        <span class="project-url">suhelshah.pythonanywhere.com <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <a href="https://suhelshah.pythonanywhere.com" target="_blank" class="project-visit-btn">
+          Visit Website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-    </a>
-    <a href="https://ratnagiri-scrap.netlify.app" target="_blank" class="project-card reveal">
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal">
       <div class="project-thumb" style="background:linear-gradient(135deg,#F5F3FF,#DDD6FE)">♻️<span class="thumb-label">Ratnagiri</span></div>
       <div class="project-body">
         <div class="live-pill"><span class="live-dot"></span> Live now</div>
@@ -206,9 +220,13 @@ footer p{font-size:13px;color:var(--muted)}
         <div class="project-name">Shah Industries</div>
         <p class="project-desc">Multi-page informational website with services, contact form, Google Maps and mobile-friendly design.</p>
         <div class="feat-tags"><span class="feat-tag">Multi Page</span><span class="feat-tag">Google Maps</span><span class="feat-tag">Contact Form</span><span class="feat-tag">Mobile Friendly</span></div>
-        <span class="project-url">ratnagiri-scrap.netlify.app <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        <a href="https://ratnagiri-scrap.netlify.app" target="_blank" class="project-visit-btn">
+          Visit Website
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-    </a>
+    </div>
+
   </div>
 </section>
 
